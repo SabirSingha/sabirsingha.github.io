@@ -1,18 +1,58 @@
-body {
+/* body {
     margin: 0;
-    padding: 0;
-    background-image: url(https://images.pexels.com/photos/925743/pexels-photo-925743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    padding : 0;
+    background-image: url(images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     font-family:sans-serif;
+  } */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body.mycontainer {
+    min-height: 100vh;
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+  }
+  
+  hr {
+    width: 50%;
+    margin: auto;
+
+                              
   }
   
   h1 {
-    color: #050c16;
+    color: #0d366e;
   }
   
   body, h1 {
     text-align: center;
   }
+  
+  .profile-pic img {
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    object-fit:cover;
+    display: block;
+    margin: 0 auto;
+    opacity: 80%;
+  }
+
+
+
+
+
+
+
+
+
   
