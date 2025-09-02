@@ -1,58 +1,66 @@
-/* body {
-    margin: 0;
-    padding : 0;
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-family:sans-serif;
-  } */
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
-body.mycontainer {
-    min-height: 100vh;
-    background: url("../images/bg.jpg") no-repeat center center/cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    align-items: center;  
-  }
-  
-  hr {
-    width: 50%;
-    margin: auto;
 
-                              
-  }
-  
-  h1 {
-    color: #0d366e;
-  }
-  
-  body, h1 {
-    text-align: center;
-  }
-  
-  .profile-pic img {
-    width: 120px;
-    height:120px;
-    border-radius: 50%;
-    object-fit:cover;
-    display: block;
-    margin: 0 auto;
-    opacity: 80%;
-  }
+/* Background on the whole page */
+body {
+  min-height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center center/cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+
+/* Profile picture styling */
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  opacity: 80%;
+}
 
 
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;              
+  margin: 30px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;        
+}
 
 
+.style-card {
+  flex: 1;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
 
+.style-card h3 {
+  margin-top: 0;
+  color: #f0f0f0;
+}
 
+.style-card ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+.style-card a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
 
-
-  
+.style-card li {
+  font-family:'Roboto', sans-serif;
+}
